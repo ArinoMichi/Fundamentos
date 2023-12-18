@@ -16,7 +16,7 @@ namespace Fundamentos
         {
             //SOLO ESCRIBIREMOS AQUI
             this.txtNombre.Location = new Point(78, 10);
-            this.lblSaludo.Text = "Hola " + this.txtNombre.Text;
+            
             //TENEMOS PROPIEDADES DE TIPOS DE DATOS PRIMITIVOS
             //LOS PRIMITIVOS, DIRECTAMEBTE SE ESCRIBEN
             this.txtNombre.Text = "Hola Mundo";
@@ -28,6 +28,10 @@ namespace Fundamentos
             //PONGAMOS QUE DESEAMOS ALINEAR EL TEXTO DE UNA CAJA
             //1. LEFT, 2. RIGHT,
             this.txtNombre.TextAlign = HorizontalAlignment.Center;
+
+
+            int mayor = 888;
+            short pequenio = (short)mayor;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,9 +44,6 @@ namespace Fundamentos
 
         }
 
-        private void lblSaludo_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

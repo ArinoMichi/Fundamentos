@@ -31,7 +31,6 @@
             btnPulsar = new Button();
             label1 = new Label();
             txtNombre = new TextBox();
-            lblSaludo = new Label();
             SuspendLayout();
             // 
             // btnPulsar
@@ -64,24 +63,12 @@
             txtNombre.Size = new Size(230, 23);
             txtNombre.TabIndex = 2;
             // 
-            // lblSaludo
-            // 
-            lblSaludo.AutoSize = true;
-            lblSaludo.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSaludo.Location = new Point(53, 111);
-            lblSaludo.Name = "lblSaludo";
-            lblSaludo.Size = new Size(49, 13);
-            lblSaludo.TabIndex = 3;
-            lblSaludo.Text = "1111111";
-            lblSaludo.Click += lblSaludo_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(480, 282);
-            Controls.Add(lblSaludo);
             Controls.Add(txtNombre);
             Controls.Add(label1);
             Controls.Add(btnPulsar);
@@ -97,6 +84,5 @@
         private Button btnPulsar;
         private Label label1;
         private TextBox txtNombre;
-        private Label lblSaludo;
     }
 }
