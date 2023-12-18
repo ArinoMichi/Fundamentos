@@ -19,7 +19,7 @@ namespace Fundamentos
             this.lblSaludo.Text = "Hola " + this.txtNombre.Text;
             //TENEMOS PROPIEDADES DE TIPOS DE DATOS PRIMITIVOS
             //LOS PRIMITIVOS, DIRECTAMEBTE SE ESCRIBEN
-            this.txtNombre.Text = "soy un texto";
+            this.txtNombre.Text = "Hola Mundo";
             //ESTO ES UNA EXCEPCION EN LA NORMA
             //TENER UNA CLASE ESTRUCTURADA O FINAL,
             //NO SE INSTANCIA, SE UTILIZA.
