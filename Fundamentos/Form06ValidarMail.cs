@@ -21,7 +21,7 @@ namespace Fundamentos
                 if (!(email.StartsWith("@") || email.EndsWith("@")))
                 {
                     // No exista más de una @
-                    if (ContarArrobas(email)==1)
+                    if (email.IndexOf("@") != email.LastIndexOf("@"))
                     {
                         // Exista un punto
                         if (email.Contains("."))
@@ -68,18 +68,6 @@ namespace Fundamentos
             {
                 MessageBox.Show("Error: Falta @ en la dirección de correo.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-        private int ContarArrobas(string email)
-        {
-            int arrobasCount = 0;
-            foreach (char c in email)
-            {
-                if (c == '@')
-                {
-                    arrobasCount++;
-                }
-            }
-            return arrobasCount;
         }
     }
 }
